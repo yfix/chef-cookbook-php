@@ -20,7 +20,7 @@
 #
 
 case node['platform']
-when "centos", "redhat", "fedora"
+when "amazon", "centos", "redhat", "scientific", "fedora"
   %w{ zlib-devel }.each do |pkg|
     package pkg do
       action :install
